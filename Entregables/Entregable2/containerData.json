@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Ferrari",
+    "price": 300000,
+    "thumbnail": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/U5NQT2GDRBGUFFCG66U7TC4QZE.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Lamborghini",
+    "price": 250000,
+    "thumbnail": "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/financial/2021/landing/over/lfs_landing_rev_over_01_m.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Porsche",
+    "price": 270000,
+    "thumbnail": "https://www.diariomotor.com/imagenes/picscache/750x/brabus-porsche-taycan-2022-04-6285217be0dfc_750x.jpg"
+  }
+]
