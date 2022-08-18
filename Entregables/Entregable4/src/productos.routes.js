@@ -4,7 +4,7 @@ const routerProductos = express.Router();
 
 /* -------------DB------------- */
 
-const DB_PRODUCTOS = [
+let DB_PRODUCTOS = [
   {
     id: 1,
     title: "Ferrari",
@@ -57,14 +57,28 @@ routerProductos.delete("/:id", (req, res) => {
   let id = req.params.id;
   if (DB_PRODUCTOS.some((obj) => obj.id == id)) {
     let dbFiltererd = DB_PRODUCTOS.filter((obj) => obj.id != id);
-    DB_PRODUCTOS= dbFiltererd;
-    res
-    .status(201)
-    .json({ msj: "ID: "+id+" Eliminado exitosamente" , data: DB_PRODUCTOS });
+    DB_PRODUCTOS = dbFiltererd;
+    res.status(201).json({
+      msj: "ID: " + id + " Eliminado exitosamente",
+      data: DB_PRODUCTOS,
+    });
   } else {
+    res.status(400).json({ msj: "ID: " + id + " No existe" });
+  }
+});
+
+routerProductos.put("/:id", (req, res) => {
+  let id = req.params.id;
+  const { title, price, thumbnail } = req.body;
+  if (DB_PRODUCTOS.some((obj) => obj.id == id)) {
+    DB_PRODUCTOS[id-1].title = title;
+    DB_PRODUCTOS[id-1].price = price;
+    DB_PRODUCTOS[id-1].thumbnail = thumbnail;
     res
-    .status(400)
-    .json({ msj: "ID: "+id+" No existe"});
+      .status(201)
+      .json({ msj: "ID: " + id + " modificado satisfactoriamente" });
+  } else {
+    res.status(400).json({ msj: "ID: " + id + " No existe" });
   }
 });
 
