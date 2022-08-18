@@ -71,9 +71,10 @@ routerProductos.put("/:id", (req, res) => {
   let id = req.params.id;
   const { title, price, thumbnail } = req.body;
   if (DB_PRODUCTOS.some((obj) => obj.id == id)) {
-    DB_PRODUCTOS[id-1].title = title;
-    DB_PRODUCTOS[id-1].price = price;
-    DB_PRODUCTOS[id-1].thumbnail = thumbnail;
+    let index= DB_PRODUCTOS.findIndex((i)=>i.id==id)
+    DB_PRODUCTOS[index].title = title;
+    DB_PRODUCTOS[index].price = price;
+    DB_PRODUCTOS[index].thumbnail = thumbnail;
     res
       .status(201)
       .json({ msj: "ID: " + id + " modificado satisfactoriamente" });
