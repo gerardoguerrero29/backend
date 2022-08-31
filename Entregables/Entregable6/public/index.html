@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <title>Chat Websocket - Entregable 6</title>
+  </head>
+  <body>
+    <div class="container m-5">
+      <h3>Chat Websocket</h3>
+      <form>
+        <div class="mb-3">
+          <label for="user" class="form-label">Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            id="user"
+            aria-describedby="userComment"
+          />
+          <div id="userComment" class="form-text tex-muted">
+            Usuario que se utiliza en el chat
+          </div>
+        </div>
+        <div class="mb-3 form-group">
+          <label for="contenidoMensaje" class="form-label">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="contenidoMensaje"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-success" onclick="buttonClick()">
+          Enviar
+        </button>
+      </form>
+      <hr />
+      <div id="historial">
+        hola como estas
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
