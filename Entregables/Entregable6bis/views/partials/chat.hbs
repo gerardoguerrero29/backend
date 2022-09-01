@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h2 style="color:rgb(20, 220, 80);">Chat Websocket</h2>
+  <form>
+    <div class="mb-3">
+      <label for="user" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="user"
+        aria-describedby="userComment"
+        required
+      />
+    </div>
+    <div class="mb-3 form-group">
+      <label for="contenidoMensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="contenidoMensaje" rows="3"></textarea>
+    </div>
+    <input type="submit" class="btn btn-success" onclick=buttonClick()></input>  
+  </form>
+  <hr />
+  <div style="background-color:white" id="historial">
+    <span> texto de prueba </span>
+  </div>
+</div>
