@@ -1,5 +1,5 @@
 {
-  "name": "entregable6",
+  "name": "entregable7_pf",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,6 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "socket.io": "^4.5.1"
+    "express-handlebars": "^6.0.6",
+    "hbs": "^4.2.0",
+    "http": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "router": "^1.3.7",
+    "socket.io": "^4.5.2"
   }
 }

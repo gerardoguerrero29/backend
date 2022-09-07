@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "timestamp": "",
+    "products": [
+      {
+        "id": 1,
+        "timestamp": "",
+        "name": "Ferrari",
+        "description": "",
+        "key": "",
+        "thumbnail": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/U5NQT2GDRBGUFFCG66U7TC4QZE.jpg",
+        "price": 300000,
+        "stock": ""
+      }
+    ]
+  },
+  {
+    "products": [
+      {
+        "id": 3,
+        "timestamp": "",
+        "name": "Porsche",
+        "description": "esta es un Porsche",
+        "key": "P1",
+        "thumbnail": "https://www.diariomotor.com/imagenes/picscache/750x/brabus-porsche-taycan-2022-04-6285217be0dfc_750x.jpg",
+        "price": 270000,
+        "stock": 5
+      },
+      {
+        "id": 3,
+        "timestamp": "",
+        "name": "Porsche",
+        "description": "esta es un Porsche",
+        "key": "P1",
+        "thumbnail": "https://www.diariomotor.com/imagenes/picscache/750x/brabus-porsche-taycan-2022-04-6285217be0dfc_750x.jpg",
+        "price": 270000,
+        "stock": 5
+      }
+    ],
+    "id": "2",
+    "timestamp": "07/09/2022 07:28:15"
+  }
+]
