@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "crud-knex-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "node ./src/batch/createTables.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1"
+  }
+}
